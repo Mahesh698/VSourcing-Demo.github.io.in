@@ -1,0 +1,100 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>solution of module 3</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styless.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- <style>
+.mySlides {display:none;}
+</style> -->
+  </head>
+  <style >  
+body{
+	background-color: #E8E8E8}
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid 5F6366;
+  border-radius: 5px;
+}
+</style>
+<body class="background">
+<header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+        
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand , pull-left " style="color:white;margin-left: -150px;"  href="#">VSourcing</a>
+
+</nav>
+
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right" style="font-size: medium;">
+            <li>
+              <a href="index.HTML#">
+                <span class="glyphicon glyphicon-home"></span><br class="hidden-xs hidden-sm hidden-md hidden-lg">&nbsp;HOME</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-user"></span><br class="hidden-xs hidden-sm hidden-md hidden-lg">&nbsp;About us</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs hidden-sm hidden-md hidden-lg">&nbsp;Services</a>
+            </li>
+            <li>
+              <a href="#" onclick = "Redirect()";>
+                <span class="glyphicon glyphicon-envelope"></span><br class="hidden-xs hidden-sm hidden-md hidden-lg">&nbsp;Contact us</a>
+            </li>
+           
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
+  </header>
+	
+<h2 style="padding: 1%;color: 5F6366;">Enter Your Details</h2>
+
+
+<form id="contactForm" style="width: 40%;padding: 2%;color: black">
+  <label for="fname">Full Name : </label>
+  <input type="text" id="fname" name="fname">
+  <label for="contact">Contact Number : </label>
+  <input type="Number" maxlength="10" id="contact" name="contact">
+  <label for="mail">Email : </label>
+  <input type="mail" id="mail" name="mail">
+  <input style="width: 100px;" type="button" onclick="submitData()" value="Submit">
+  <input style="width: 100px;margin-left: 15px;" type="button" onclick="backToHome()" value="Back">
+
+
+</form>
+
+<script>
+function submitData() {
+  document.getElementById("contactForm").submit();
+
+}
+function backToHome() {
+     window.location = "index.HTML#";
+ }
+</script>
+
+</body>
+</html>

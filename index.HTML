@@ -1,0 +1,167 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>solution of module 3</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styless.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- <style>
+.mySlides {display:none;}
+</style> -->
+  </head>
+<body>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+        
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand , pull-left " style="color:white;margin-left: -150px;"  href="#">VSourcing</a>
+
+</nav>
+
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right" style="font-size: medium;">
+            <li>
+              <a href="menu-categories.html">
+                <span class="glyphicon glyphicon-home"></span><br class="hidden-xs hidden-sm hidden-md hidden-lg">&nbsp;HOME</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-user"></span><br class="hidden-xs hidden-sm hidden-md hidden-lg">&nbsp;About us</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs hidden-sm hidden-md hidden-lg">&nbsp;Services</a>
+            </li>
+            <li>
+              <a href="#" onclick = "Redirect()";>
+                <span class="glyphicon glyphicon-envelope"></span><br class="hidden-xs hidden-sm hidden-md hidden-lg">&nbsp;Contact us</a>
+            </li>
+           
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
+  </header>
+
+ <!-- <div id="main content" class="container"> -->
+  <!-- <section id="p" > -->
+	<!-- <h4 id="chicken" class="text-center">Chicken</h4> -->
+<div class="w3-content w3-display-container" style="position: inherit;margin-top: 90px;">
+  <img class="mySlides" src="IMG_20201120_213123.jpg" style="width:100%;height:375px;">
+  <img class="mySlides" src="IMG-20201120-WA0023.jpg" style="width:100%; height:375px;">
+  <img class="mySlides" src="IMG-20201120-WA0024.jpg" style="width:100% ; height: 375px;">
+  <!-- <img class="mySlides" src="img_forest.jpg" style="width:100%"> -->
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+
+<article class="all-browsers">
+  <h1 style="color: 5F6366" , text-align: center;>WHAT PEOPLE SAYS ABOUT US</h1>
+  <article class="browser">
+    <h4>S BOYLE, Customer </h4>
+    <p >Simply awesome... finally a theme that looks and feels great. It's fast and friendly to use. The authors are fast to respond to queries and very helpful in suggesting 
+</p>
+  </article>
+  <article class="browser">
+    <h4>TIM BARKLEY, CEO</h4>
+    <p>I bought this theme because I was looking for good all-in-one solution. and it suted all of my needs, no more, no less. I was not familiar with web technologies
+
+</p>
+  </article>
+  <article class="browser">
+    <h4>LEONARDO PORTLAND, Manager</h4>
+    <p>My previuos site was really hard to manage. I'm a bit old for web technologies, and was spending much time and effort on editing content and creating pages.</p>
+  </article>
+</article>
+                            
+    <!-- </section> -->
+ <!-- </div> -->
+<footer>
+<div class="row">
+  <div class="column">
+  	<h5>Quick Links</h5>
+    <ul>
+  		<li>Home</li>
+  		<li>About Us</li>
+     	<li>Contact Us</li>
+    </ul> 
+  </div>
+  <div class="column">
+  	<h5> Services</h5>
+    <ul>
+  		<li>IT Services</li>
+  		<li>Insurance</li>
+     	<li>Fixed Asset Management</li>
+    </ul> 
+  </div>
+  <div class="column">
+  	<h5>Contact Info</h5>
+    	<span style="font-weight: bold;">Address : </span>&nbsp; <span>Nathani Heights, A-wing Gr Flr. Office No. 28, Dr.D.B.Marg, Mumbai Central, Mumbai - 400008</span><br>
+    	<span style="font-weight: bold;">Phone : </span>&nbsp; <span>+91 9820482373 | +91 9987993342 | +022 23520190</span>
+  </div>
+</div>
+
+</footer>
+
+<!-- <div class="footer">
+  <div class="column">
+    
+  </div>
+  
+  <div class="column">
+    <h2>Contact Info.</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur ased accumsan convallis.</p>
+  </div>
+  
+
+</div> -->
+
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";
+
+
+}
+
+function Redirect() {
+     window.location = "contactUs.HTML#";
+ }  
+</script>
+</body>
+</html>s
